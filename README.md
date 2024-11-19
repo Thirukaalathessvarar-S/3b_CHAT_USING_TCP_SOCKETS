@@ -1,4 +1,4 @@
-# 3b.CREATION FOR CHAT USING TCP SOCKETS
+[# 3b.CREATION FOR CHAT USING TCP SOCKETS
 ## AIM
 To write a python program for creating Chat using TCP Sockets Links.
 ## ALGORITHM:
@@ -8,34 +8,35 @@ To write a python program for creating Chat using TCP Sockets Links.
  server
 4. Send and receive the message using the send function in socket.
 ## PROGRAM
-### client.py
-```python
-import socket
-s=socket.socket()
-s.connect(('localhost',8000))
-while True:
-    msg=input("Client > ")
-    s.send(msg.encode())
+## CLIENT:
+```
+import socket 
+s=socket.socket() 
+s.connect(('localhost',8000)) 
+while True: 
+    msg=input("Client > ") 
+    s.send(msg.encode()) 
     print("Server > ",s.recv(1024).decode())
 ```
-### server.py
-```python
-import socket
-s=socket.socket()
-s.bind(('localhost',8000))
-s.listen(5)
-c,addr=s.accept()
-while True:
-    ClientMessage=c.recv(1024).decode()
-    print("Client > ",ClientMessage)
-    msg=input("Server > ")
-    c.send(msg.encode())
+## SERVER:
 ```
-## OUTPUT
-### client.py
-![alt text](client.png)
-### server.py
-![alt text](server.png)
+import socket 
+s=socket.socket() 
+s.bind(('localhost',8000)) 
+s.listen(5) 
+c,addr=s.accept() 
+while True: 
+           ClientMessage=c.recv(1024).decode() 
+           print("Client > ",ClientMessage) 
+           msg=input("Server > ") 
+           c.send(msg.encode())
+```
+## OUPUT
+![image](https://github.com/user-attachments/assets/fbf20e02-2e8e-43e6-9a59-ff7562eec872)
+
+![image](https://github.com/user-attachments/assets/0170eba8-26a2-4463-a9ff-816300e6adfb)
+
 ## RESULT
 Thus, the python program for creating Chat using TCP Sockets Links was successfully 
 created and executed.
+](https://github.com/Thirukaalathessvarar-S/3a.Sockets_Creation_for_Echo_Client_and_Echo_Server/blob/main/README.md)
