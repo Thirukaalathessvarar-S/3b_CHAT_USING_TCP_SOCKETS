@@ -39,4 +39,3 @@ while True:
 ## RESULT
 Thus, the python program for creating Chat using TCP Sockets Links was successfully 
 created and executed.
-](https://github.com/Thirukaalathessvarar-S/3a.Sockets_Creation_for_Echo_Client_and_Echo_Server/blob/main/README.md)
